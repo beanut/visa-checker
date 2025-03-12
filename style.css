@@ -50,3 +50,9 @@ h1 {
     font-size: 4.5rem;
 }
 
+@media (max-width: 680px) and (min-width:0px) {
+    .intro-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
