@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(27, 18, 18);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map-container svg {
+    width: 90%;
+    height: auto;
+    /* background-color: blue; */
+}
+
+.visa-free-country {
+    fill: #01662b;
+}
+
+.visa-on-arrival-country {
+    fill: #37ba6e;
+}
+
+.e-visa-country {
+    fill: #66f7a5 ;
+}
+
+.visa-eta-country {
+    fill: #c3ff00;
+}
+
+.visa-required-country {
+    fill: #E74C3C;
+}
+
+.selected-country {
+    fill: #009dd9;
+}
+
+.active_country {
+    fill: #009dd9;
+    /* Default active country color */
+}
+
+.inactive_country {
+    fill: #a9a8a8;
+    /* Default inactive country color */
+}
+
+.border {
+    fill: none;
+    stroke: rgb(27, 18, 18);
+    stroke-width: 0.5px;
+}
+.selector-container {
+    /* display: block; */
+    position: absolute;
+}
+h3 {
+    
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    color: white;
+}

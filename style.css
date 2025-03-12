@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.intro-container {
+    position: absolute; /* Place it over the video */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it perfectly */
+    color: white; /* Make text readable */
+    text-align: center;
+    z-index: 2; /* Ensure it appears above video */
+    display: flexbox;
+    gap: 3rem;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 4.5rem;
+}
+
